@@ -52,7 +52,12 @@ function OmniDashboard() {
   return (
     <div className="omni-app">
       <aside className="arsenal-sidebar">
-        <div className="sidebar-header">MODEL MANIFOLD</div>
+        <div className="sidebar-header">ARMADADEV // MANIFOLD</div>
+        
+        <div className="system-persona">
+          <span className="persona-label">SYS_ARCH:</span> <span className="persona-value">SenLlmCore</span>
+        </div>
+
         <select className="model-select" value={model} onChange={(e) => setModel(e.target.value)}>
           {MODELS.map(m => <option key={m} value={m}>{m}</option>)}
         </select>
